@@ -1,0 +1,423 @@
+@charset 'UTF-8';
+
+/* common */
+.pc{
+	display: block !important;
+}
+
+.mb{
+	display: none !important;
+}
+
+.inner{
+	width: 90%;
+	max-width: 1300px;
+	margin: auto;
+}
+
+.sectionCss{
+	padding: 100px 0;
+}
+
+:root{
+	--mainCol: #3399ff;
+}
+
+
+/* visual */
+.visual .visualLi img{
+	width: 100%;
+}
+
+.visual .slick-dots{
+	bottom: 5%;
+}
+
+.slick-dotted.slick-slider{
+	margin-bottom: 0;
+}
+
+.slick-dots li{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.3) 1px 1px 4px;
+	margin: 0 10px;
+	opacity: 0.9;
+}
+
+.slick-dots li.slick-active{
+	background: #1d4e9e;
+}
+
+.slick-dots li button{
+	opacity: 0;
+}
+
+.slick-prev, 
+.slick-next{
+	z-index: 99;
+	width: 70px;
+	height: 70px;
+}
+
+.slick-prev::before,
+.slick-next::before{
+	display: none !important;
+}
+
+.slick-prev::after,
+.slick-next::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.slick-prev::after{
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+.slick-next::after{
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+.slick-prev{
+	left: 10%;
+}
+
+.slick-next{
+	right: 10%;
+}
+
+/* priceBox */
+.priceBox{
+	background: url(../img/priceBg.jpg) top right / cover;
+}
+
+.priceBox h2{
+	font-size: 50px;
+	text-align: center;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+.priceBox h2 span{
+	display: inline-block;
+	background: var(--mainCol);
+	font-weight: 100;
+	color: #fff;
+	padding: 0 2vw;
+	border-radius: 100px;
+	font-size: 0.8em;
+}
+
+.priceBox h2 strong{
+	font-weight: 900;
+}
+
+.priceBox .inner > p{
+	font-size: 20px;
+	text-align: center;
+	margin: 30px 0 50px;
+	line-height: 1.5;
+}
+
+.priceBox ul{
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	display: flex;
+}
+
+.priceBox ul li{
+	width: calc(98%/3);
+	margin-right: 1%;
+	box-sizing: border-box;
+	text-align: center;
+	background: #fff;
+	border: 2px solid #666;
+	padding: 40px 0;
+}
+
+.priceBox ul li:last-child{
+	margin-right: 0;
+}
+
+.priceBox ul li h5{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.3;
+	margin-bottom: 15px;
+}
+
+.priceBox ul li p{
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.priceBox ul li p strong{
+	font-size: 3em;
+	font-weight: 900;
+	color: var(--mainCol);
+}
+
+.priceBox ul li span{
+	font-size: 1em;
+}
+
+
+/* conSection */
+.conSection .inner{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conSection table{
+	width: 50%;
+	display: block;
+}
+
+.conSection table a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.conSection table img{
+	width: 100%;
+	vertical-align: top;
+}
+
+/* mapInfo */
+.mapInfo .box{
+	display: flex;
+}
+
+.mapInfo .box > article{
+	width: 50%;
+}
+
+.infoBox{
+	background: #1f304a;
+	box-sizing: border-box;
+	padding: 3vw;
+}
+
+.infoBox .top{
+	font-size: 1.2vw;
+	color: #fff;
+	line-height: 1.5;
+}
+
+.infoBox .middle{
+	margin: 30px 0;
+	line-height: 1.4;
+}
+
+.infoBox .middle h4{
+	font-size: 1.1vw;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.infoBox .middle ul li{
+	display: flex;
+	line-height: 2;
+}
+
+.infoBox .middle ul li h5{
+	width: 6vw;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 100;
+}
+
+.infoBox .middle ul li p{
+	width: calc(100% - 6vw);
+	color: #fff;
+	font-size: 16px;
+}
+
+.infoBox .middle span{
+	color: #fff;
+	display: block;
+	font-weight: 100;
+	font-size: 14px;
+	margin-top: 10px;
+	line-height: 1.7;
+}
+
+.infoBox .bottom p{
+	color: #7fcaf1;
+	font-size: 1.5vw;
+	line-height: 3vw;
+}
+
+.infoBox .bottom p span{
+	vertical-align: middle;
+}
+
+.infoBox .bottom p a{
+	color: #7fcaf1;
+	font-size: 1.4em;
+	vertical-align: middle;
+	font-weight: 900;
+}
+
+
+.footer{
+	background: #333333;
+	padding: 60px 0;
+	font-size: 16px;
+	line-height: 1.7;
+	text-align: center;
+}
+
+.footer p,
+.footer address{
+	color: #fff;
+	font-weight: 300;
+}
+
+.footer address{
+	display: block;
+	text-align: center;
+	margin: 10px 0 30px;
+	font-size: 0.9em;
+	font-weight: 100;
+}
+
+
+/*------------------------------------------------------------------------------------------720 모바일*/
+@media screen and (max-width: 720px){
+
+/* common */
+.pc{
+	display: none !important;
+}
+
+.mb{
+	display: block !important;
+}
+
+.sectionCss{
+	padding: 10vw 0;
+}
+
+/* visual */
+.slick-prev, .slick-next{
+	width: 30px;
+	height: 30px;
+	display: none !important;
+}
+
+/* priceBox */
+.priceBox h2{
+	font-size: 6vw;
+}
+
+.priceBox .inner > p{
+	font-size: 3vw;
+	white-space: nowrap;
+	margin: 5vw 0 7vw;
+}
+
+.priceBox ul li{
+	padding: 5vw 0;
+}
+
+.priceBox ul li h5{
+	font-size: 4vw;
+	margin-bottom: 1vw;
+}
+
+.priceBox ul li p{
+	font-size: 3vw;
+	margin-bottom: 2vw;
+}
+
+.priceBox ul li span{
+	font-size: 2.5vw;
+}
+
+/* conSection */
+.conSection table{
+	width: 100%;
+}
+
+
+/* mapInfo */
+.mapInfo .box{
+	flex-wrap: wrap;
+}
+
+.mapInfo .box > article{
+	width: 100%;
+}
+
+.mapBox{
+	height: 60vw;
+}
+
+.infoBox{
+	padding: 10vw 5%;
+}
+
+.infoBox .middle{
+	margin: 5vw 0 10vw;
+}
+
+.infoBox .middle h4{
+	font-size: 4vw;
+}
+
+.infoBox .middle ul li h5{
+	width: 20vw;
+	font-size: 4vw;
+}
+
+.infoBox .middle ul li p{
+	width: calc(100% - 20vw);
+	font-size: 4vw;
+}
+
+.infoBox .middle span{
+	font-size: 3vw;
+}
+
+.infoBox .bottom p{
+	font-size: 5vw;
+}
+
+
+/* footer */
+.footer{
+	font-size: 12px;
+	padding: 10vw 0;
+}
+
+.fLogo{
+	width: 50%;
+	margin: auto;
+}
+
+.fLogo img{
+	width: 100%;
+}
+
+
+
+}
+
+
+
+

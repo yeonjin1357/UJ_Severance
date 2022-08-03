@@ -1,0 +1,90 @@
+/* ============================ footer style start ============================= */
+@charset "utf-8";
+
+#footer {padding: 1.5% 0; background-color: #fff; border-top: 1px solid #eeeeee;}
+#footer * {text-align: center; color: #888888; font-size: 15px !important;}
+#footer p:first-of-type {margin: 3% 0 1% 0;}
+#footer img {width: 100%;max-width:200px;}
+
+@media screen and (max-width:1025px){
+	#footer{padding: 30px 0 100px;}
+	#footer * {font-size: 13px !important;}
+	#footer img {max-width: 60%; width: 140px;}
+	#footer p { white-space: pre-line;}
+	#footer p br {display: none;}
+}
+
+/* ================================================================= */
+/* ========================== quick menu ========================== */
+/* ================================================================= */
+
+#quick_menu {position: absolute; top: 125px; right: 0; z-index: 99999999;}
+#quick_menu img {height: 38px;}
+#quick_menu span {display: block; width: 100%; padding-top: 5px; font-size: 12px;}
+
+#quick_menu li a {display: block; background-color: #ffffffc7; text-align: center; font-weight: 500; padding: 10px;  font-size: 14px; max-width: 100px; border: 1px solid #ccc; max-height: 100px;}
+#quick_menu li:first-child {color: #fff; background-color: #111; padding: 10px 0; width: 100%; text-align: center; font-size: 0.85em;}
+#quick_menu li a:hover {background-color: #fff; transition: all 0.3s;}
+
+#top_btn {border: none; width: 100%; max-width: 100px; max-height: 100px; padding: 10px; background-color: #626262; cursor: pointer;}
+#top_btn span {color: #fff;}
+
+/* ===================== Mobile size : 1024px ======================= */
+
+@media screen and (max-width:1024px){
+	#quick_menu {
+		padding: 0;
+		left: 0px;
+		top: auto;
+		width: 100%;
+		height: auto;
+		bottom: 0px;
+		display: block;
+		position: fixed;
+		z-index: 200;
+	}
+	#quick_menu ul {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		z-index: 202;
+	}
+	#quick_menu ul li {
+		width: 20%;
+		height: 100%;
+		text-align: center;
+		border-right-color: rgb(255, 255, 255);
+		border-right-width: 1px;
+		border-right-style: solid;
+		float: left;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	#quick_menu ul li a{
+		width: 100%;
+		max-width: 100%	;
+		border: none;	
+		padding: 10px;
+	}
+
+	#quick_menu ul li span{
+		padding-top: 0;
+	}
+
+
+	#quick_menu ul li#call{
+		display: none;
+	}
+	#quick_menu ul li:first-child{
+		display: none;
+	}
+	#quick_menu ul li#top{
+		display: none;
+	}
+
+	@media screen and (max-width:425px){
+		#footer * {font-size: 11px !important;}
+	}
+}
